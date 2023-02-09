@@ -1,26 +1,15 @@
-// console.log("Hello my name is alicia");
-// console.log("Hello my name is ja");
-// console.log("Hello my name is yun");
-// console.log("Hello my name is choi");
+const age = parseInt(prompt("How old are you?"));
 
-function sayHello(yourName, age) {
-  console.log("Hello my name is " + yourName + " and I'm " + age);
+console.log();
+
+if (isNaN(age)) {
+  console.log("Please write number");
+} else if (age < 18) {
+  console.log("Your too young");
+} else if (age >= 18 && age <= 50) {
+  console.log("You can drink");
+} else if (age > 50 && age <= 80) {
+  console.log("You should exercise");
+} else if (age > 80) {
+  console.log("You can do whatever you want");
 }
-
-sayHello("jayun", 19);
-sayHello("nico", 35);
-
-function plus(a, b) {
-  console.log(a + b);
-}
-
-plus(1, 5); // a=1, b=5
-
-const player = {
-  name: "alicia",
-  sayHello: function (otherPersonName) {
-    console.log("hello " + otherPersonName + " nice to meet you!");
-  },
-};
-
-player.sayHello("nico");
