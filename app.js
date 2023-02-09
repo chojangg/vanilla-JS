@@ -1,3 +1,25 @@
-const amIFat = null; // null==nothing
-let something; //undefined 공간은 있지만 값이 없음
-console.log(something, amIFat);
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+
+// Get Item from Array
+console.log(daysOfWeek);
+
+// Add one more day to the array
+daysOfWeek.push("sun");
+
+console.log(daysOfWeek);
+
+/*
+const mon = "mon";
+const tue = "tue";
+const wed = "wed";
+const thu = "thu";
+const fri = "fri";
+const sat = "sat";
+const sun = "sun";
+
+const daysOfWeek =[mon, tue, wed, thu, fri, sat, sun];
+
+const nonsense = [1, 2, "hello", false, null, true, undefined, "nico"];
+
+console.log(daysOfWeek);
+*/
