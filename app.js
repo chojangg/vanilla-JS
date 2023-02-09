@@ -1,19 +1,26 @@
-/* const playerName = "alicia";
-const playerPoints = 121212;
-const playerHandsome =  true;
-const playerFat = "little bit";
+// console.log("Hello my name is alicia");
+// console.log("Hello my name is ja");
+// console.log("Hello my name is yun");
+// console.log("Hello my name is choi");
 
-const player=["alicia",1212,true,"little bit"];*/
+function sayHello(yourName, age) {
+  console.log("Hello my name is " + yourName + " and I'm " + age);
+}
+
+sayHello("jayun", 19);
+sayHello("nico", 35);
+
+function plus(a, b) {
+  console.log(a + b);
+}
+
+plus(1, 5); // a=1, b=5
 
 const player = {
   name: "alicia",
-  points: 10,
-  fat: false
+  sayHello: function (otherPersonName) {
+    console.log("hello " + otherPersonName + " nice to meet you!");
+  },
 };
 
-console.log(player);
-console.log(player.name);
-
-player.lastName = "patato";
-player.points = player.points + 15;
-console.log(player);
+player.sayHello("nico");
